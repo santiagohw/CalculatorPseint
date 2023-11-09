@@ -5,9 +5,9 @@ Algoritmo OptionsCalculator
 	Escribir "Restar:2"
 	Escribir "Multiplicar:3"
 	Escribir "Dividir:4"
-	Definir M, N1, N2, Resultado, Resultado2, Resultado3, Resultado4 Como Entero
-	Leer M
-	Si M=1 Entonces
+	Definir selectedOperation, N1, N2, Resultado, Resultado2, Resultado3, Resultado4 Como Entero
+	Leer selectedOperation
+	Si selectedOperation=1 Entonces
 		Escribir "Digitar numero a sumar"
 		Leer N1
 		Escribir "Digitar 2 numero a sumar"
@@ -15,7 +15,7 @@ Algoritmo OptionsCalculator
 		Resultado<-N1+N2
 		Escribir "El resultado de la suma es,",Resultado
 	SiNo
-		Si M=2 Entonces
+		Si selectedOperation=2 Entonces
 			Escribir "Digitar numero a restar"
 			Leer N1
 			Escribir "Digitar 2 numero a restar"
@@ -23,7 +23,7 @@ Algoritmo OptionsCalculator
 			Resultado2<-N1-N2
 			Escribir "El resultado de la resta es,",Resultado2
 		SiNo
-			Si M=3 Entonces
+			Si selectedOperation=3 Entonces
 				
 				Escribir "Digitar numero a multiplicar"
 				Leer N1
@@ -32,7 +32,7 @@ Algoritmo OptionsCalculator
 				Resultado3<-N1*N2
 				Escribir "El Resultado de la multiplicacion es,",Resultado3
 			SiNo
-				Si M=4 Entonces
+				Si selectedOperation=4 Entonces
 					Escribir "Insertar numero a dividir"
 					Leer N1
 					Escribir "Insertar 2 numero a dividir"
