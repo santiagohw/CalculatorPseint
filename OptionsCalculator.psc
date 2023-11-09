@@ -5,6 +5,7 @@ Algoritmo OptionsCalculator
 	Escribir "Restar:2"
 	Escribir "Multiplicar:3"
 	Escribir "Dividir:4"
+	Definir M, N1, N2, Resultado, Resultado2, Resultado3, Resultado4 Como Entero
 	Leer M
 	Si M=1 Entonces
 		Escribir "Digitar numero a sumar"
